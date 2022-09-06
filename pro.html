@@ -1,0 +1,41 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA Project</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <div>
+    <form>
+        <h2>Budget Maker</h2>
+        <div class="container">
+            <label for="expense">Choose ExpenseAmount</label><br>
+            <input type="number" id="amount" name="expense"><br>
+        </div><br>
+        <div>
+            <label for="Description">Choose Description</label><br>
+            <input type="text" id="Descrip" name="Description"><br><br>
+        </div>
+        <div>
+            <label for="Category">Choose Category</label><br><br>
+            <select name="Category" id="cat" >
+                <option value="MOvies">Movies</option>
+                <option value="food">Food</option>
+                <option value="Electricity">Electricity</option>
+                <option value="M-bill">Mobile-bills</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="button" id="btn" class="button"  value="Add Expenses" onclick="savedata(event)">
+        </div>
+        <ul id="list"></ul>
+
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="P.js"></script>
+
+</body>
+</html>
